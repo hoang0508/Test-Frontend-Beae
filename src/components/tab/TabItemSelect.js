@@ -1,7 +1,7 @@
 import React from "react";
 import { IconArrow } from "../icons";
 
-const TabItemSelect = ({ item, handleTabSelect }) => {
+const TabItemSelect = ({ item, handleTabSelect, isActive }) => {
   const screenCurrent = window.screen.width;
   return (
     <div
@@ -23,14 +23,14 @@ const TabItemSelect = ({ item, handleTabSelect }) => {
         <div className="flex items-center w-full">
           <div className="flex items-center gap-x-5">
             <span className="w-[50px] h-[50px] bg-[#F4F4F4] flex items-center justify-center rounded-full">
-              {item.icon}
+              {item.iconMobile}
             </span>
             <span className="font-bold text-[21px] text-[#181818] leading-9">
               {item.title}
             </span>
           </div>
           <div className="ml-auto mr-[30px]">
-            <IconArrow />
+            <IconArrow open={isActive} />
           </div>
         </div>
       )}

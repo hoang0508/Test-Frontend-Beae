@@ -38,7 +38,7 @@ const TapContent = () => {
           Graphite Artist Quality Fine Art Drawing and Sketching Pencils
           Replaceable Nib Pencils.
         </p>
-        <div className="flex flex-col mb-9 max-sm:mb-7 max-sm:grid max-sm:grid-cols-2 max-sm:gap-x-5">
+        <div className="flex flex-col mb-9 max-sm:mb-7 max-sm:grid max-sm:grid-cols-2 max-sm:gap-x-5 ml-[15px]">
           {textDots &&
             textDots.map((item) => (
               <ul key={item.id}>

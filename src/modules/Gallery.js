@@ -8,6 +8,15 @@ import img5 from "../assets/image/5.png";
 import img6 from "../assets/image/6.png";
 import img7 from "../assets/image/7.png";
 
+import reponsiveImage1 from "../assets/image/reponsive/reponsive-image1.png";
+import reponsiveImage2 from "../assets/image/reponsive/reponsive-image2.png";
+import reponsiveImage3 from "../assets/image/reponsive/reponsive-image3.png";
+import reponsiveImage4 from "../assets/image/reponsive/reponsive-image4.png";
+import reponsiveImage5 from "../assets/image/reponsive/reponsive-image5.png";
+
+import reponsiveImage6 from "../assets/image/reponsive/reponsive-image6.png";
+import reponsiveImage7 from "../assets/image/reponsive/reponsive-image7.png";
+
 const Gallery = () => {
   const screenCurrent = window.screen.width;
   return (
@@ -19,41 +28,65 @@ const Gallery = () => {
       {screenCurrent > 400 ? (
         <div className="flex gap-x-[18px] items-center">
           <div className="flex flex-col gap-y-3">
-            <div>
-              <img src={img1} alt="" className="w-full h-full object-cover" />
+            <div className="w-[291px]">
+              <img src={img1} alt="" />
             </div>
-            <div>
-              <img src={img4} alt="" className="w-full h-full object-cover" />
+            <div className="w-[291px]">
+              <img src={img4} alt="" />
             </div>
           </div>
           <div className="grid grid-rows-2 gap-y-[13px]">
-            <div className="col-span-2">
-              <img src={img2} alt="" className="w-full h-full " />
+            <div className="col-span-2 h-[294px]">
+              <img src={img2} alt="" className="h-full w-full" />
             </div>
-            <div className="col-span-2">
-              <img src={img3} alt="" className="w-full h-full object-cover" />
+            <div className="col-span-2  h-[295px]">
+              <img src={img3} alt="" className="h-full w-full" />
             </div>
           </div>
           <div className="flex flex-col gap-y-3">
-            <div>
-              <img src={img5} alt="" className="w-full h-full object-cover" />
+            <div className="w-[291px]">
+              <img src={img5} alt="" />
             </div>
-            <div>
-              <img src={img6} alt="" className="w-full h-full object-cover" />
+            <div className="w-[291px]">
+              <img src={img6} alt="" />
             </div>
-            <div>
-              <img src={img7} alt="" className="w-full h-full object-cover" />
+            <div className="w-[291px]">
+              <img src={img7} alt="" />
             </div>
           </div>
         </div>
       ) : (
-        <div className="grid grid-rows-3 grid-flow-col gap-4">
-          <div className="row-span-3 ...">01</div>
-          <div className="col-span-2 ...">
-            <img src={img1} alt="" />
+        <>
+          <div className="flex gap-x-[10px] mb-[10px]">
+            <div className="flex flex-col gap-y-[10px]">
+              <div className="h-[128px]">
+                <img src={reponsiveImage2} alt="" className="h-full" />
+              </div>
+              <div className="h-[152px]">
+                <img src={reponsiveImage6} alt="" className="h-full" />
+              </div>
+            </div>
+            <div className="h-[291px]">
+              <img src={reponsiveImage4} alt="" className="h-full" />
+            </div>
           </div>
-          <div className="col-span-2 ...">03</div>
-        </div>
+          <div className="flex flex-col gap-y-[10px] mb-[10px]">
+            <div className="h-[298px]">
+              <img src={reponsiveImage1} alt="" className="h-full w-full" />
+            </div>
+            <div className="h-[298px]">
+              <img src={reponsiveImage3} alt="" className="h-full w-full" />
+            </div>
+          </div>
+          <div className="flex gap-x-[10px]">
+            <div className="h-[131px]">
+              <img src={reponsiveImage7} alt="" className="h-full w-full" />
+            </div>
+            <div className="h-[131px]">
+              <img src={reponsiveImage5} alt="" className="h-full w-full" />
+            </div>
+          </div>
+        </>
       )}
     </div>
   );

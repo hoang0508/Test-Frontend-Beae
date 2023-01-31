@@ -12,14 +12,14 @@ const dataProduct = [
     priceOld: "$125.00",
   },
   {
-    id: 1,
+    id: 2,
     image: imagePencilRed,
     name: "Castell Mechanical Pencil",
     priciceNew: "$75.00",
     priceOld: "$99.00",
   },
   {
-    id: 1,
+    id: 3,
     image: imagePencilGray,
     name: "Architect Choice Pencil",
     priciceNew: "$45.00",
